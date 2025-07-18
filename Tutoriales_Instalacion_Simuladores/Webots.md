@@ -129,5 +129,8 @@ Y podremos lanzar el Turtlebot con NAV2 con:
 ros2 launch webots_ros2_turtlebot robot_launch.py nav:=true
 ```
 
-Se muestra el proceso completo en el siguiente video:  
-[Video del proceso completo con NAV2](https://drive.google.com/file/d/1v1eEK31NI5DHpot0LFUTxuvDAyhIwg_7/view?usp=sharing)
+Se muestra el proceso completo en el siguiente video:
+
+[WebotsVideo.webm](https://github.com/user-attachments/assets/039a71ad-05ca-4e6a-9d97-3682d715ff75)
+
+[Video de simulación en Webots](https://drive.google.com/file/d/1v1eEK31NI5DHpot0LFUTxuvDAyhIwg_7/view?usp=sharing)
