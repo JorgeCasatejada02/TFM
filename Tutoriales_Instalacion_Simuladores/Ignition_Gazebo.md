@@ -160,5 +160,8 @@ ROS_LOCALHOST_ONLY=1 TURTLEBOT3_MODEL=waffle ros2 launch turtlebot3 simulation.l
 Se puede ver cómo inicia tanto el Ignition como el RViz, con Nav2 y SLAM, en la siguiente imagen:  
 ![Simulación de TurtleBot3 en Ignition + RViz](images/GazeboCap7.png)
 
-Se muestra el proceso completo en el siguiente video:  
+Se muestra el proceso completo en el siguiente video:
+
+[VideoGazeboIgnition.webm](https://github.com/user-attachments/assets/eec11dac-aba3-4266-a605-4a2653eb3da6)
+
 [Video de simulación en Ignition](https://drive.google.com/file/d/1i2FNMm1GxFaXhm6FhWGwyWrt4mPbMg11/view?usp=sharing)
