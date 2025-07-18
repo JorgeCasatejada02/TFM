@@ -295,4 +295,6 @@ Esto hará que Rviz se abra y se comience a cargar el mapa y una vez cargado pod
 
 Se muestra el proceso completo en el siguiente video:
 
-[IsaacVideo.webm](https://drive.google.com/file/d/1ncqji2OPv3vQ5_iqrpa1x-kX7DWHYLxt/view?usp=sharing)
+[IsaacVideo.webm](https://github.com/user-attachments/assets/eea1e320-5715-4e01-840a-5faba5027bae)
+
+[Video de simulación en IsaacSim](https://drive.google.com/file/d/1ncqji2OPv3vQ5_iqrpa1x-kX7DWHYLxt/view?usp=sharing)
