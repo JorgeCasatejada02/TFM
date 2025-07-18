@@ -322,7 +322,9 @@ ros2 launch webots_ros2_example robot_launch.py rviz:=true nav:=true slam_toolbo
 
 En RViz, usar Nav2 Goal para mover el robot, podemos ver como funciona en el siguiente video:
 
-https://drive.google.com/file/d/1tttXQCAq6QeV7lREsmQbtxjoj_ssuI1X/view?usp=sharing
+[example_webots.webm](https://github.com/user-attachments/assets/e8152a89-4168-46ae-a1a3-72cc05dbdd53)
+
+[Video de Webots con Ros 2 y Nav2](https://drive.google.com/file/d/1tttXQCAq6QeV7lREsmQbtxjoj_ssuI1X/view?usp=sharing)
 
 # Uso de otro mapa
 
@@ -363,5 +365,8 @@ ros2 launch webots_ros2_example robot_launch.py rviz:=true nav:=true slam_toolbo
 
 Podemos ver como funciona en el siguiente video:
 
-https://drive.google.com/file/d/1z_qBT7xzMaenFWKZJ2qtONZG8yN0qx6t/view?usp=sharing
+[example_webots_boomer.webm](https://github.com/user-attachments/assets/9bf58c22-04d7-4844-91f2-5616e9c6c184)
+
+[Video de Webots con Ros 2 y Nav2 otro mapa](https://drive.google.com/file/d/1z_qBT7xzMaenFWKZJ2qtONZG8yN0qx6t/view?usp=sharing)
+
 
