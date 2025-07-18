@@ -108,8 +108,8 @@ Guías completas de instalación y configuración para cada simulador:
 - [`IsaacSim.md`](Tutoriales_Instalacion_Simuladores/IsaacSim.md) - Instalación y configuración de NVIDIA Isaac Sim
 - [`Gazebo_Classic.md`](Tutoriales_Instalacion_Simuladores/Gazebo_Classic.md) - Instalación y configuración de Gazebo Classic
 
-### 🔗 [ejemplo_webots_ros2/](ejemplo_webots_ros2/)
-Ejemplo desarrolado en Webots con ROS 2
+### 🔗 [webots_ros2_example/](webots_ros2_example/)
+Ejemplo desarrolado en Webots con ROS 2 y Nav2 esplicado paso a paso.
 
 ## 📋 Escenarios de Prueba
 
@@ -125,4 +125,4 @@ Los experimentos se realizaron bajo diferentes configuraciones:
 Este trabajo forma parte del Trabajo Fin de Máster en el contexto de:
 - **Universidad**: Universidad de León
 - **Máster**: Máster en Robótica e Inteligencia Artificial
-- **Autor**: Jorge Casatejada
+- **Autor**: Jorge Casatejada Santamarta
