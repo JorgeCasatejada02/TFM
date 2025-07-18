@@ -156,5 +156,8 @@ Una vez lanzado, tendremos que estimar la pose inicial como se ve en la imagen d
 Y una vez hecho esto, podremos establecer una posición objetivo, por ejemplo desde RViz:  
 ![Establecimiento de posición objetivo](images/GazeboCap6.png)
 
-Y veremos como el TurtleBot viaja hasta esa posición. Se puede ver cómo ocurre todo en el siguiente video:  
+Y veremos como el TurtleBot viaja hasta esa posición. Se puede ver cómo ocurre todo en el siguiente video:
+
+[VideoGazeboClassic.webm](https://github.com/user-attachments/assets/6e6330c8-8e13-4e14-a8c5-43043b31609d)
+
 [Video de demostración](https://drive.google.com/file/d/1w9T3fVGo0hiLXVXU5Cwod1nkgd66f-Rd/view?usp=sharing)
