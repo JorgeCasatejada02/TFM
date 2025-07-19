@@ -50,7 +50,7 @@ Que nos debería abrir la pantalla inicial de Gazebo, como se ve a continuación
 
 ---
 
-## Turtlebot
+## Turtlebot 3
 
 Primero hay que instalar los siguientes paquetes de ROS2:
 
@@ -111,7 +111,7 @@ Con esto ya tendremos todo instalado para poder usar TurtleBot3 en Gazebo.
 
 ---
 
-## Gazebo Ignition
+## Gazebo Ignition - Turtlebot 3
 
 Para lanzar la simulación de TurtleBot3 en Ignition se hará uso del repositorio:  
 [https://github.com/Onicc/navigation2_ignition_gazebo_turtlebot3](https://github.com/Onicc/navigation2_ignition_gazebo_turtlebot3)
@@ -165,3 +165,64 @@ Se muestra el proceso completo en el siguiente video:
 [VideoGazeboIgnition.webm](https://github.com/user-attachments/assets/eec11dac-aba3-4266-a605-4a2653eb3da6)
 
 [Video de simulación en Ignition](https://drive.google.com/file/d/1i2FNMm1GxFaXhm6FhWGwyWrt4mPbMg11/view?usp=sharing)
+
+## Turtlebot4
+Desde código fuente, primero se clona el repositorio git:
+
+```bash
+mkdir -p ~/turtlebot4_ws/src
+cd ~/turtlebot4_ws/src
+git clone https://github.com/turtlebot/turtlebot4_simulator.git -b humble
+```
+
+Se instalan las dependencias:
+
+```bash
+cd ~/turtlebot4_ws
+rosdep install --from-path src -yi
+```
+
+Compilan los paquetes:
+
+```bash
+source /opt/ros/humble/setup.bash
+colcon build --symlink-install
+```
+
+Y se puede ya cargar el espacio de trabajo con:
+
+```bash
+source ~/turtlebot4_ws/install/setup.bash
+```
+
+Y ya podemos usar el simulador con turtlebot.
+
+---
+
+## Gazebo Ignition - Turtlebot 4
+Podemos obtener el mapa con:
+
+```bash
+ros2 launch turtlebot4_ignition_bringup turtlebot4_ignition.launch.py nav2:=true slam:=true rviz:=true world:=maze
+```
+
+Y guardarlo con:
+
+```bash
+ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "name:
+data: 'map_name'"
+```
+
+Este comando nos genera 2 archivos, uno en formato 'yaml' con los metadatos del mapa y otro en formato 'pgm' para su imagen.
+
+Y por último, con el mapa obtenido, podemos lanzar el simulador así:
+
+```bash
+ros2 launch turtlebot4_ignition_bringup turtlebot4_ignition.launch.py nav2:=true slam:=false localization:=true rviz:=true world:=maze map:=my_map_maze.yaml
+```
+
+Podemos ver cómo funciona en el siguiente video:
+
+[VideoGazeboIgnitionT4.webm](https://github.com/user-attachments/assets/2e3028ab-8b2c-4679-b121-76edb56259aa)
+
+[Video de simulación en Ignition - T4](https://drive.google.com/file/d/1HgS1VYMVWBNQ5LkK___735AlsnXNzhSx/view?usp=sharing)
